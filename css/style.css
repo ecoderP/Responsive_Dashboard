@@ -1,0 +1,31 @@
+header {
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.bx-doughnut-chart, 
+.bx-menu, 
+.bx-menu-alt-right, 
+.bx-dots-vertical-rounded {
+    font-size: 2rem;
+    transition: all 400ms ease-in-out;
+}
+.horizontal-dots {
+    transform: rotate(90deg);
+}
+#open-menu {
+    cursor: pointer;
+}
+#close-menu {
+    cursor: pointer;
+    display: none;
+}
+.img-thumbnail {
+    width: 30px;
+    height: auto;
+}
+/*Mobile menu*/
+#mobile-menu {
+    display: none;
+}

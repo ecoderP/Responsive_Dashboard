@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <!--Box Icons CDN-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!--Boostrap CSS-->
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.css">
+    <!--Fonts Awesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <!--CSS styles-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar navbar-dark sticky-top bg-dark flex p-0 shadow">
+        <div class="d-flex bd-highlight mx-3">
+            <i class='bx bx-doughnut-chart'></i>
+            <h4 class="px-2">CodeVotex</h4>
+            <i class='bx bx-menu' id="open-menu" ></i>
+            <i class='bx bx-menu-alt-right' id="close-menu"></i>
+        </div>
+        <nav class="nav">
+            <a href="#" class="mt-3 text-white d-md-none">
+                <i class='bx bx-dots-vertical-rounded' id="horizontalDots"></i>
+            </a>
+            <ul class="list-unstyled p-2 d-none d-md-flex">
+                <li class="mt-3 mx-2"><a href="#" class="text-white">
+                    Personalise Theme <i class='bx bx-chevron-down'></i>
+                </a>
+                </li>
+                <li class="mt-3 mx-2"><a href="#" class="text-white">
+                    <i class='bx bx-globe'></i> <span></span>
+                </a>
+                </li>
+                <li class="mt-2 mx-3">
+                    <img src="img/me.jpg" class="img-thumbnail" alt="Responsive Dashboard">
+                    Hi, Paul <i class='bx bx-chevron-down'></i>
+                </li>
+                
+            </ul>
+        </nav>
+        <div class="d-md-none position-absolute top-100 end-0 bg-light p-3" id="mobile-menu">
+            <a href="#" class="text-dark py-3">
+                <img src="img/me.jpg" class="img-thumbnail" alt="Responsive Dashboard">
+                Hi, Paul <i class='bx bx-chevron-down'></i>
+            </a>
+            <a href="#" class="d-block text-dark py-3">
+                Personalise Theme <i class='bx bx-chevron-down'></i>
+            </a>
+            <a href="#" class="d-block text-dark py-3">
+                <i class='bx bx-globe'></i><span></span> Notifications
+            </a>
+                
+            
+        </div>
+    </header>
+    <div class="container-fluid d-flex mx-md-3">
+        <div class="col" id="side-bar">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="">
+                        <i class='bx bx-search'></i> <input type="search">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="link-item">Dashboard</span> 
+                    </a>  
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-credit-card-front'></i>
+                        <span class="link-item">Payments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <i class='bx bx-chat'></i>
+                    <span class="link-item">Messages</span>
+                </a>
+            </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-line-chart'></i>
+                        <span class="link-item">Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-folder'></i>
+                        <span class="class-item">File Manager</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-cart-alt'></i>
+                        <span class="link-item">Orders</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-headphone'></i>
+                        <span class="link-item">Support</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="settings">
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                </a>
+                <span>Settings</span>
+
+            </div>
+
+
+        </div>
+        <div class="col" id="main">
+            hello
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
