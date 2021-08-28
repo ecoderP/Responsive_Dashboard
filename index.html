@@ -17,10 +17,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <noscript>
+        For full functionality of this site it is necessary to enable JavaScript.
+        Here are the <a href="https://www.enable-javascript.com/">
+        instructions on how to enable JavaScript in your web browser</a>.
+       </noscript>
+      
+
     <header class="navbar navbar-dark sticky-top bg-dark flex p-0 shadow">
         <div class="d-flex bd-highlight mx-3">
             <i class='bx bx-doughnut-chart'></i>
-            <h4 class="px-2">CodeVotex</h4>
+            <h4 class="codevotex px-2">CodeVotex</h4>
             <i class='bx bx-menu' id="open-menu" ></i>
             <i class='bx bx-menu-alt-right' id="close-menu"></i>
         </div>
@@ -63,9 +70,7 @@
         <div class="col-md-3 bg-dark p-3 text-center" id="left-sidebar">
             <ul class="list-unstyled">
                 <li class="left-sidebar-item">
-                    <a href="">
-                        <i class='bx bx-search'></i> <input type="search" class="rounded">
-                    </a>
+                        <i class='bx bx-search' id="search-btn"></i> <input type="text" class="link-item rounded" placeholder="Search...">
                 </li>
                 <li class="left-sidebar-item">
                     <a href="" class="">
@@ -94,7 +99,7 @@
                 <li class="left-sidebar-item">
                     <a href="#">
                         <i class='bx bx-folder'></i>
-                        <span class="class-item">File Manager</span>
+                        <span class="link-item">File Manager</span>
                     </a>
                 </li>
                 <li class="left-sidebar-item">
@@ -110,10 +115,10 @@
                     </a>
                 </li>
             </ul>
-            <div class="settings">
+            <div class="settings py-4 text-center">
                 <a href="#" class="settings-box">
                     <i class='bx bx-cog'></i>
-                    <span>Settings</span>
+                    <span class="link-item">Settings</span>
                 </a>
 
             </div>
