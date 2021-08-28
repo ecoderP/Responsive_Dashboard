@@ -11,18 +11,23 @@ a {
     font-size: 2rem;
     transition: all 400ms ease-in-out;
 }
+.bx-doughnut-chart, 
+.codevotex {
+    display: none;
+}
 .horizontal-dots {
     transform: rotate(270deg);
 }
 #open-menu {
     transition: all 500ms ease-in-out;
     cursor: pointer;
-    display: none;
+    
     
 }
 #close-menu {
     transition: all 500ms ease-in-out;
     cursor: pointer;
+    display: none;
 }
 .img-thumbnail {
     width: 30px;
@@ -42,6 +47,12 @@ a:hover {
 #left-sidebar {
     height: 100vh;
     position: relative;
+    transition: all 500ms ease-in-out;
+}
+.div.col-md-3, 
+.div.col-6 {
+    transform: translateX(-50%);
+    transition: all 400ms ease-in-out;
 }
 #left-sidebar input {
     width: 100%;
@@ -56,32 +67,25 @@ a:hover {
 .left-sidebar-item .bx-search {
     color: white;
     font-size: 1.5rem;
-    position: absolute;
-    /*top: 5;
-    left: 10;
-    padding-left: 5px;*/
-    padding-bottom: 9px;
-    top: 10%;
-    left: 9%;
-    transform: translateY(-50%);
 }
 .bx-search.open-state { /*properly align search btn on sidebar collapse*/
-    padding-bottom: 50px;
-    padding-left: 17px;
+    position:absolute;
+    margin: 10px 10px;
+    font-size: 1.5rem;
 }
 .left-sidebar-item {
     font-size: 1rem;
-   /* height: 45px;*/
     margin: 15px 0;
     padding: 8px 0;
 }
 .left-sidebar-item:hover:not(:first-child) {
     background-color: white;
-    color: black;
+    color: rgb(219, 173, 173);
     border-radius: 10%;
 }
 .link-item {
-    transition: all 500ms ease-in-out;
+    display: none;
+    transition: all 600ms ease-in-out;
 }
 .left-sidebar-item .bx,
  .settings .bx {

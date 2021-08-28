@@ -13,7 +13,7 @@ function open() {
     if(openMenu.style.display === 'none') {
         openMenu.style.display = 'block';
         closeMenu.style.display = 'none';
-        logo.style.display = 'none';
+        logo.classList.display = 'none';
         codeVotex.style.display = 'none';
         
     } else {
@@ -44,21 +44,25 @@ function minimiseSideBar() {
     const sideBar = document.getElementById('left-sidebar');
     const searchBtn = document.getElementById('search-btn');
     
+    
+     if(sideBar.classList.contains('col-md-1')) {
+        sideBar.classList.replace('col-md-1', 'col-md-3');
+        sideBar.classList.replace('col-2', 'col-6');
+        searchBtn.classList.add('open-state') //properly align search button
+    } else {
+        sideBar.classList.replace('col-md-3', 'col-md-1');
+        sideBar.classList.replace('col-6', 'col-2');
+        searchBtn.classList.remove('open-state')
+    }
+    
     for(i=0; i < hideSideLinks.length; i++) {
         if(openMenu.style.display === 'block') {
             hideSideLinks[i].style.display = 'none';
         } else {
-            hideSideLinks[i].style.display = 'block';
+            hideSideLinks[i].style.display = 'inline';
         }
         
      }
-     if(sideBar.classList.contains('col-md-3')) {
-        sideBar.classList.replace('col-md-3', 'col-md-1');
-        searchBtn.classList.add('open-state')
-    } else {
-        sideBar.classList.replace('col-md-1', 'col-md-3');
-        searchBtn.classList.remove('open-state')
-    }
 }
 
 
