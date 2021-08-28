@@ -22,6 +22,10 @@ function open() {
         logo.style.display = 'block';
         codeVotex.style.display = 'block';
         
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+})
     }
     minimiseSideBar();
 }
@@ -47,14 +51,15 @@ function minimiseSideBar() {
     
      if(sideBar.classList.contains('col-md-1')) {
         sideBar.classList.replace('col-md-1', 'col-md-3');
-        sideBar.classList.replace('col-2', 'col-6');
+        sideBar.classList.replace('col-2', 'col-7');
         searchBtn.classList.add('open-state') //properly align search button
     } else {
         sideBar.classList.replace('col-md-3', 'col-md-1');
-        sideBar.classList.replace('col-6', 'col-2');
-        searchBtn.classList.remove('open-state')
+        sideBar.classList.replace('col-7', 'col-2');
+        searchBtn.classList.remove('open-state');
     }
-    
+
+
     for(i=0; i < hideSideLinks.length; i++) {
         if(openMenu.style.display === 'block') {
             hideSideLinks[i].style.display = 'none';
