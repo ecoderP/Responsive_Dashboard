@@ -4,6 +4,8 @@ header {
 }
 a {
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 .logo, 
 .icon-open-menu, 
@@ -48,6 +50,7 @@ li.dropdown-item span,
 .oceans_theme,
 .pinky_theme {
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
 }
 .default {
     background: #343a40;
@@ -65,6 +68,8 @@ li.dropdown-item span,
 }
 a {
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 a:hover {
     color: black;
@@ -104,6 +109,7 @@ a:hover {
     font-size: 1rem;
     margin: 15px 0;
     padding: 8px 0;
+    font-family: 'Roboto', sans-serif;
 }
 .left-sidebar-item:hover:not(:first-child) {
     background-color: white;
@@ -129,9 +135,11 @@ a:hover {
 }
 .settings-box {
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Main Content Area --------------------*/
 .main-content-area div {
     height: 10rem;
+    font-family: 'Roboto', sans-serif;
 }
