@@ -1,18 +1,19 @@
+/* Headers and Nav Styles -------------*/
 header {
     color: white;
 }
 a {
     text-decoration: none;
 }
-.bx-doughnut-chart, 
-.bx-menu, 
-.bx-menu-alt-right, 
-.bx-dots-vertical-rounded {
+.logo, 
+.icon-open-menu, 
+.icon-close-menu, 
+.horizontal-dots-mobile-menu {
     font-size: 2rem;
     transition: all 400ms ease-in-out;
 }
-.bx-doughnut-chart, 
-.codevotex {
+.logo, 
+.brand-name {
     display: none;
 }
 .horizontal-dots {
@@ -33,7 +34,32 @@ a {
     width: 30px;
     height: auto;
 }
-/*Mobile menu*/
+
+/* Dropdown Elements Styles -----------------------*/
+li.dropdown-item span, 
+.theme-customiser-on-mobile {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+/* --- Personalisation*/
+.default_theme,
+.oceans_theme,
+.pinky_theme {
+    cursor: pointer;
+}
+.default {
+    background: #343a40;
+}
+.oceans {
+    background: #0dcaf0;
+}
+.pinky {
+    background: #d63384;
+}
+
+/* Mobile menu --------------------------------------*/
 #mobile-menu {
     display: none;
 }
@@ -43,7 +69,8 @@ a {
 a:hover {
     color: black;
 }
-/*Left sidebar item*/
+
+/* Left sidebar item ---------------------------------*/
 #left-sidebar {
     height: 100vh;
     position: relative;
@@ -92,7 +119,7 @@ a:hover {
     font-size: 1.3rem;
 }
 
-/*Settings box*/
+/*----------------  Settings box*/
 .settings {
     width: 100%;
     position: absolute;
@@ -102,4 +129,9 @@ a:hover {
 }
 .settings-box {
     font-size: 1rem;
+}
+
+/* Main Content Area --------------------*/
+.main-content-area div {
+    height: 10rem;
 }

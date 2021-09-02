@@ -1,0 +1,31 @@
+header.navbar {
+    color: #ffffff;
+    background-color: #d63384 !important;
+}
+.nav a {
+    color: #fff !important;
+}
+#default_theme, 
+#oceans_theme, 
+#pinky_theme {
+    color: #d63384 !important;
+}
+#profile a, 
+#log_out a {
+    color: #d63384 !important;
+}
+#left-sidebar {
+    background-color: #d63384 !important;
+    color: #fff !important;
+}
+#left-sidebar input {
+   color: #fff;
+    background: #1d1b31;
+}
+.left-sidebar-item .bx-search {
+    color: #fff;
+}
+.left-sidebar-item .bx,
+.left-sidebar-item .link-item {
+    color: #fff;
+}

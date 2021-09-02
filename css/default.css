@@ -1,0 +1,16 @@
+header.navbar {
+    color: #ffffff;
+    background-color: #212529;
+}
+
+#left-sidebar {
+    background-color: #212529;
+}
+#left-sidebar input {
+    background: #1d1b31;
+}
+
+
+#main {
+    background: rgba(13, 110, 253, 0.2);
+}

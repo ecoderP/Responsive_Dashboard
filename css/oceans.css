@@ -1,0 +1,34 @@
+header.navbar {
+    color: #ffffff;
+    background-color: #0dcaf0 !important;
+}
+.nav a {
+    color: #fff !important;
+}
+#default_theme, 
+#oceans_theme, 
+#pinky_theme {
+    color: #0dcaf0 !important;
+}
+#profile a, 
+#log_out a {
+    color: #0dcaf0 !important;
+}
+#left-sidebar {
+    background-color: #fff !important;
+    color: #0dcaf0 !important;
+}
+#left-sidebar input {
+   color: #0dcaf0;
+    background: #1d1b31;
+}
+.left-sidebar-item .bx-search {
+    color: #0dcaf0;
+}
+.left-sidebar-item .bx,
+.left-sidebar-item .link-item {
+    color: #0dcaf0;
+}
+#main {
+    background: rgba(13, 110, 253, 0.1);
+}
